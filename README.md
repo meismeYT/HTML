@@ -1,3 +1,3 @@
 # HTML
-Micah and justus's HTML repository
-dont use if you are not them
+Micah and justus's HTML code for a private corporation, use without permission is prohibited
+
