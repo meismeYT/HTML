@@ -937,24 +937,6 @@
           </div>
         </ea-legal-disclaimer-text>
       </ea-local-footer>
-      <ea-elements-loader elements="ea-network-footer, ea-network-legal, ea-link, ea-content-loader"></ea-elements-loader>
-      <ea-network-footer theme="dark" logo-image="https://media.contentapi.ea.com/content/dam/eacom/en-us/common/october-ea-ring.png" logo-tooltip="" logo-link-url="https://www.ea.com" logo-link-text="EA" logo-link-tooltip="EA" unresolved>
-        <img src="https://media.contentapi.ea.com/content/dam/eacom/en-us/common/october-ea-ring.png" alt="" />
-        <ea-link slot="link" link-href="/games" link-title="Browse Games" link-text="Browse Games" text-color="dark" unresolved>
-          <a href="/games" title="Browse Games">Browse Games</a>
-        </ea-link>
-        <ea-link slot="link" link-href="/about" link-title="About" link-text="About" text-color="dark" unresolved>
-          <a href="/about" title="About">About</a>
-        </ea-link>
-        <ea-link slot="link" link-href="https://help.ea.com/" link-title="Support" link-text="Support" text-color="dark" unresolved>
-          <a href="https://help.ea.com/" title="Support">Support</a>
-        </ea-link>
-        <ea-link slot="link" link-href="https://www.ea.com/ea-app" link-title="Shop on EA App" link-text="Shop on EA App" text-color="dark" unresolved>
-          <a href="https://www.ea.com/ea-app" title="Shop on EA App">Shop on EA App</a>
-        </ea-link>
-        <ea-link slot="link" link-href="/able " link-title="Accessibility" link-text="Accessibility" text-color="dark" unresolved>
-          <a href="/able " title="Accessibility">Accessibility</a>
-        </ea-link>
         <ea-elements-loader elements="ea-regional-pricing-selector"></ea-elements-loader>
         <ea-regional-pricing-selector slot="regional-pricing-selector" theme="dark" label-text="Regional Pricing" unresolved>
           <ea-regional-pricing-selector-option slot="regional-pricing-selector-option" value="AT">Austria</ea-regional-pricing-selector-option>
@@ -1093,6 +1075,30 @@
         <ea-submit unresolved slot="submit" value-text="Submit" text-color="light"></ea-submit>
       </ea-age-gate>
     </ea-modal>
+    <script src="//pl.ea.com/release/4.59.2/elements/browser-support.min.js"></script>
+    <script>
+      eaBrowserSupport.requiredFeatures = 'picture';
+      eaBrowserSupport.requiredHeading = 'Sorry, this browser is not supported';
+      eaBrowserSupport.requiredText = 'Please download a supported browser to view this webpage.';
+      eaBrowserSupport.recommendedFeatures = 'cssgrid';
+      eaBrowserSupport.recommendedText = 'This browser is not recommended and the webpage may not display properly.';
+      eaBrowserSupport.ctas = [{
+        "text": "Download Chrome",
+        "url": "https://www.google.com/chrome/"
+      }, {
+        "text": "Download Firefox",
+        "url": "https://www.mozilla.org/firefox/new/"
+      }, {
+        "text": "Download Edge",
+        "url": "https://www.microsoft.com/edge/"
+      }];
+      eaBrowserSupport.dismissText = 'Dismiss';
+      eaBrowserSupport.svgLogo = '';
+      eaBrowserSupport.init();
+    </script>
     <ea-type-kit kit-url="//use.typekit.net/txn1klh.js"></ea-type-kit>
+    <noscript>
+      <img src="https://www.ea.com/akam/13/pixel_23586424?a=dD01NTk1YTNkYjNmYTg1NGZiNTkyNzFhNmQ4OGJlODQ4NjBkOGYyMTViJmpzPW9mZg==" style="visibility: hidden; position: absolute; left: -999px; top: -999px;" />
+    </noscript>
   </body>
 </html>
