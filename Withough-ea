@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" wf-loading>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="/assets/images/favicon.png">
+    <script>
+      window.newrelicAttributes = {
+        accountId: "1796917",
+        trustKey: "1796917",
+        agentId: "149134891",
+        licenseKey: "f701a6c63c",
+        applicationId: "149134891"
+      };
+    </script>
+    <script src="/newrelic.js"></script>
+    <!-- Google Tag Manager -->
+    <script>
+      (function(w, d, s, l) {
+        w[l] = w[l] || [];
+        w[l].push({
+          'gtm.start': new Date().getTime(),
+          event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0];
+        var j = d.createElement(s);
+        var dl = l !== 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=GTM-TG32RCX' + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer');
+    </script>
+    <!-- End Google Tag Manager -->
+    <style>
+      [unresolved] {
+        visibility: hidden !important;
+      }
+    </style>
+    <noscript>
+      <style>
+        [unresolved] {
+          visibility: visible !important;
+        }
+      </style>
+    </noscript>
+    <style>
+      body {
+        margin: 0;
+      }
+
+      .image img {
+        max-width: 100%;
+      }
+    </style>
+    <script>
+      if (!CSS.supports('width', 'calc((var(--test))')) {
+        window.ShadyCSS = {
+          shimcssproperties: true
+        };
+      }
+      document.addEventListener('nds.typeKit.active', function() {
+        document.querySelector('html').removeAttribute('wf-loading');
+      });
+    </script>
+    <script src="//unpkg.com/@webcomponents/webcomponentsjs@2.2.7/webcomponents-loader.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+    <script src="//w.soundcloud.com/player/api.js"></script>
+    <script>
+      window.nds = window.nds || {};
+      window.nds.componentUrlPrefix = '//pl.ea.com/release/4.59.2/elements/ea-elements.min.js'.substring(0, '//pl.ea.com/release/4.59.2/elements/ea-elements.min.js'.lastIndexOf('/') + 1);
+      window.nds.contentfulUrl = 'https://contentful-proxy.juno.ea.com/graphql';
+      window.nds.salUrl = 'https://service-aggregation-layer.juno.ea.com/graphql';
+      window.nds.useApq = true;
+      window.nds.salClientId = 'eacom-fe';
+      window.nds.xGameDistMethod = 'eacom';
+      window.nds.lockboxGameId = 'eacom';
+      window.nds.lockboxInvoiceSource = 'EACOM-STORE-WEB-%countryCode%';
+      window.nds.lockboxExternalPaymentPath = '/lockbox-external-payment';
+    </script>
+    <script type="module" src="//pl.ea.com/release/4.59.2/elements/ea-elements.min.js"></script>
+    <script nomodule defer src="//pl.ea.com/release/4.59.2/elements/ea-elements.min.js"></script>
+    <style>
+      @font-face {
+        font-family: 'Duke_Fill';
+        font-weight: 400;
+        src: url(/assets/fonts/apex-legends/DukeFill_web.woff) format('woff');
+      }
+    </style>
+    <link href="https://fast.fonts.net/cssapi/d4e9a514-63ad-4b92-b0b9-b19163f3cb59.css" rel="stylesheet" />
+    <style>
+      @font-face {
+        font-family: 'ElectronicArtsDisplay';
+        src: url(/assets/fonts/display/ElectronicArtsDisplay-Regular.woff2) format('woff');
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: 'ElectronicArtsDisplay';
+        src: url(/assets/fonts/display/ElectronicArtsDisplay-Bold.woff2) format('woff');
+        font-weight: 600;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: 'ElectronicArtsText';
+        src: url(/assets/fonts/text/ElectronicArtsText-Light.woff2) format('woff');
+        font-weight: 300;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: 'ElectronicArtsText';
+        src: url(/assets/fonts/text/ElectronicArtsText-LightItalic.woff2) format('woff');
+        font-weight: 300;
+        font-style: italic;
+      }
+
+      @font-face {
+        font-family: 'ElectronicArtsText';
+        src: url(/assets/fonts/text/ElectronicArtsText-Regular.woff2) format('woff');
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: 'ElectronicArtsText';
+        src: url(/assets/fonts/text/ElectronicArtsText-Italic.woff2) format('woff');
+        font-weight: 400;
+        font-style: italic;
+      }
+
+      @font-face {
+        font-family: 'ElectronicArtsText';
+        src: url(/assets/fonts/text/ElectronicArtsText-Bold.woff2) format('woff');
+        font-weight: 600;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: 'ElectronicArtsText';
+        src: url(/assets/fonts/text/ElectronicArtsText-BoldItalic.woff2) format('woff');
+        font-weight: 600;
+        font-style: italic;
+      }
+    </style>
+    <!-- Website Name / what it looks like at the top-->
+    <title>Website.name</title>
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Website.name">
+    <meta property="og:description" content="Website.Description">
+    <meta property="og:url" content="https://Website.com">
+    <meta property="og:site_name" content="">
+    <!-- Website Image -->
+    <meta property="og:image" content="https://media.contentapi.ea.com/content/dam/apex-legends/images/2019/01/apex-featured-image-16x9.jpg.adapt.crop191x100.1200w.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="628">
+    <meta name="description" content="Website.Description">
+    <meta name="author" content="-meisme-">
+    <meta property="article:modified_time" content="2023-04-14T21:49:41Z">
+    <meta property="article:published_time" content="2023-04-14T21:49:41Z">
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "Article",
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://media.contentapi.ea.com/content/dam/apex-legends/images/2019/01/apex-featured-image-16x9.jpg.adapt.crop191x100.1200w.jpg"
+        },
+        "author": {
+          "@type": "Organization",
+          "name": "Electronic Arts",
+          "sameAs": "https://en.wikipedia.org/wiki/Electronic_Arts"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Electronic Arts",
+          "sameAs": "https://en.wikipedia.org/wiki/Electronic_Arts",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://media.contentapi.ea.com/content/dam/ea/EA_logo.png",
+            "width": 60,
+            "height": 60
+          }
+        },
+        "inLanguage": "en",
+        "description": "Apex Legends is a free-to-play hero shooter game where legendary competitors battle for glory, fame, and fortune on the fringes of the Frontier.",
+        "datePublished": "2023-04-14T21:49:41Z",
+        "dateModified": "2023-04-14T21:49:41Z",
+        "headline": "Apex Legends - The Next Evolution of Hero Shooter - Free to Play",
+        "url": "https://www.ea.com/games/apex-legends"
+      }
+    </script>
+    <script>
+      bazadebezolkohpepadr = "592996333"
+    </script>
+    <script type="text/javascript" src="https://www.ea.com/akam/13/23586424" defer></script>
+  </head>
+  <body unresolved>
+    <custom-style>
+      <style include="shared-styles-base-common"></style>
+    </custom-style>
+    <custom-style>
+      <style include="shared-styles-base-headings"></style>
+    </custom-style>
+    <custom-style>
+      <style include="shared-styles-base-lists"></style>
+    </custom-style>
+    <custom-style>
+      <style include="shared-styles-base-links"></style>
+    </custom-style>
+    <custom-style>
+      <style include="shared-styles-base-images"></style>
+    </custom-style>
+    <custom-style>
+      <style include="shared-styles-typography-headings"></style>
+    </custom-style>
+    <custom-style>
+      <style include="shared-styles-typography-paragraphs"></style>
+    </custom-style>
+    <custom-style>
+      <style include="shared-styles-typography-labels"></style>
+    </custom-style>
+    <custom-style>
+      <!-- The " theme-color:" changes all of the text Boxes Colors-->
+      <style>
+        html {
+          --origin-brand-color: #DA292A;
+          -Corporate-landingSection-spacerTop-XS: 32px;
+          -Corporate-landingSection-spacerTop-SM: 32px;
+          -Corporate-landingSection-spacerTop-MD: 80px;
+          -Corporate-landingSection-spacerTop-LG: 104px;
+          -Corporate-landingSection-spacerTop-XL: 128px;
+          -Corporate-landingSection-spacerBottom-XS: 32px;
+          -Corporate-landingSection-spacerBottom-SM: 32px;
+          -Corporate-landingSection-spacerBottom-MD: 40px;
+          -Corporate-landingSection-spacerBottom-LG: 48px;
+          -Corporate-landingSection-spacerBottom-XL: 56px;
+          -Corporate-standardSection-spacerTop-XS: 48px;
+          -Corporate-standardSection-spacerTop-SM: 48px;
+          -Corporate-standardSection-spacerTop-MD: 80px;
+          -Corporate-standardSection-spacerTop-LG: 80px;
+          -Corporate-standardSection-spacerTop-XL: 80px;
+          -Corporate-standardSection-spacerBottom-XS: 48px;
+          -Corporate-standardSection-spacerBottom-SM: 48px;
+          -Corporate-standardSection-spacerBottom-MD: 80px;
+          -Corporate-standardSection-spacerBottom-LG: 80px;
+          -Corporate-standardSection-spacerBottom-XL: 80px;
+          --theme-stream-ui-paddle-default: #161616;
+          --theme-stream-ui-paddle-disabled: #BFBFBF;
+          --theme-stream-ui-progress-indicator-default: rgb(255, 255, 255);
+          --theme-stream-ui-progress-indicator-hover: rgb(255, 255, 255);
+          --theme-stream-ui-progress-bar-stroke-default: #ff8e8e;
+          --theme-stream-ui-progress-bar-stroke-hover: #ff8e8e;
+          --theme-stream-ui-progress-bar-fill-hover: #ff8e8e;
+          --theme-toaster-eyebrow-font-size-mobile: 16px;
+          --theme-toaster-eyebrow-font-size-tablet: 18px;
+          --theme-toaster-eyebrow-font-size-desktop: 20px;
+          --theme-toaster-copy-font-size-tablet: 16px;
+          --theme-toaster-copy-font-size-desktop: 18px;
+          --theme-tabs-background-color: #161616;
+          --theme-tabs-indicator-color: #da292a;
+          --theme-tabs-interface-color: #FF4747;
+          --theme-tabs-unselected-type: #ffffff;
+          --theme-tabs-selected-type: #ffffff;
+          --theme-tabs-selected-state: #000000;
+          --theme-tabs-accent-elements: rgba(0, 0, 0, 0.08);
+          --theme-tabs-inactive-interface-color: rgba(255, 255, 255, 0.1);
+          --theme-tabs-tab-text-transform: capitalize;
+          --theme-h5-font-size-tablet-landscape: 22px;
+          --theme-secondary-font-family: Duke_Fill;
+          --theme-typographic-headings-font-family: Duke_Fill;
+          --theme-primary-font-family: TT Lakes W05 Regular, sans-serif;
+          --theme-color: #DA292A;
+          --theme-dark-gradient: #B03039;
+          --theme-light-gradient: #DA292A;
+          --theme-d3-line-height-desktop: 62px;
+          --theme-d3-line-height-tablet-landscape: 46px;
+          --theme-d3-line-height-mobile: 46px;
+          --theme-d2-font-weight: normal;
+          --theme-d3-font-weight: normal;
+          --theme-d4-font-weight: normal;
+          --theme-l1-font-weight: normal;
+          --theme-l2-font-weight: normal;
+          --theme-local-nav-shelf-header-font-size-desktop: 24px;
+          --theme-local-nav-shelf-header-font-size-tablet-landscape: 18px;
+          --theme-local-nav-shelf-header-font-size-mobile: 20px;
+          --theme-d2-font-size-desktop: 82px;
+          --theme-d2-font-size-tablet-landscape: 68px;
+          --theme-d2-font-size-tablet-portrait: 54px;
+          --theme-d2-font-size-mobile: 48px;
+          --theme-d3-font-size-desktop: 64px;
+          --theme-d3-font-size-tablet-landscape: 54px;
+          --theme-d3-font-size-tablet-portrait: 44px;
+          --theme-d3-font-size-mobile: 40px;
+          --theme-d4-font-size-desktop: 48px;
+          --theme-d4-font-size-tablet-landscape: 44px;
+          --theme-d4-font-size-tablet-portrait: 40px;
+          --theme-d4-font-size-mobile: 36px;
+          --theme-l2-font-size-desktop: 22px;
+          --theme-l2-font-size-mobile: 20px;
+          --theme-l2-font-size-tablet-landscape: 20px;
+          --text-case: uppercase;
+          --theme-spacer-height-xsmall: 93px;
+          --theme-spacer-height-mobile-small: 93px;
+          --theme-spacer-height-tablet-portrait: 96px;
+          --theme-spacer-height-tablet-landscape: 96px;
+          --theme-spacer-height-desktop: 100px;
+        }
+      </style>
+    </custom-style>
+    <elements-loader elements="network-nav, player, type-kit"></elements-loader>
+    <network-nav unresolved userData="/user-data" content="//nds-network-nav.ea.com//en-us/network-nav" login-url="/login" logout-url="/logout" hide-logo></network-nav>
+    <elements-loader elements="page-background"></elements-loader>
+    <page-background unresolved layout="fixed" background-color="">
+      <elements-loader elements="image"></elements-loader>
+      <image unresolved tooltip="" smallest="https://media.contentapi.ea.com/content/dam/apex-legends/common/apex-page-bg-solid-beige.jpg.adapt.crop16x9.320w.jpg" small="https://media.contentapi.ea.com/content/dam/apex-legends/common/apex-page-bg-solid-beige.jpg.adapt.crop16x9.767w.jpg" medium="https://media.contentapi.ea.com/content/dam/apex-legends/common/apex-page-bg-solid-beige.jpg.adapt.crop16x9.1023w.jpg" large="https://media.contentapi.ea.com/content/dam/apex-legends/common/apex-page-bg-solid-beige.jpg.adapt.crop16x9.1455w.jpg" largest="https://media.contentapi.ea.com/content/dam/apex-legends/common/apex-page-bg-solid-beige.jpg.adapt.crop16x9.1920w.jpg" slot="image">
+        <img src="https://media.contentapi.ea.com/content/dam/apex-legends/common/apex-page-bg-solid-beige.jpg.adapt.crop16x9.320w.jpg" alt="" srcset="https://media.contentapi.ea.com/content/dam/apex-legends/common/apex-page-bg-solid-beige.jpg.adapt.crop16x9.320w.jpg 320w, https://media.contentapi.ea.com/content/dam/apex-legends/common/apex-page-bg-solid-beige.jpg.adapt.crop16x9.767w.jpg 768w, https://media.contentapi.ea.com/content/dam/apex-legends/common/apex-page-bg-solid-beige.jpg.adapt.crop16x9.1023w.jpg 1024w, https://media.contentapi.ea.com/content/dam/apex-legends/common/apex-page-bg-solid-beige.jpg.adapt.crop16x9.1455w.jpg 1320w, https://media.contentapi.ea.com/content/dam/apex-legends/common/apex-page-bg-solid-beige.jpg.adapt.crop16x9.1920w.jpg 1456w" />
+      </image>
+    </page-background>
+    <!--Side Menu Start-->
+    <elements-loader elements="local-nav-advanced, link"></elements-loader>
+    <local-nav-advanced home-text="Home" home-tooltip="" home-link="/games/apex-legends/" logo-image="" logo-tooltip="" theme="light" shelf-type="band" open-drawer-text="Open" close-drawer-text="Close" mini unresolved>
+      <a title="" href="/games/apex-legends/"> Home <img src="https://media.contentapi.ea.com/content/dam/apex-legends/common/logos/apex-white-nav-logo.svg" />
+      </a>
+      <elements-loader elements="local-nav-shelf-sub-nav"></elements-loader>
+      <local-nav-shelf-sub-nav slot="local-nav-shelf-link" toggle-text="About" theme="light" type="narrow" unresolved>
+        <elements-loader elements="local-nav-shelf-sub-nav-section"></elements-loader>
+        <local-nav-shelf-sub-nav-section title-text="Overview" slot="sub-nav-section" unresolved>
+          <elements-loader elements="local-nav-shelf-sub-nav-section-link"></elements-loader>
+          <local-nav-shelf-sub-nav-section-link slot="sub-nav-section-link" link-text="About Our Group" link-href="/games/apex-legends/about" link-target="_self" unresolved>
+            <a href="/games/apex-legends/about">About Our Group</a>
+          </local-nav-shelf-sub-nav-section-link>
+          <elements-loader elements="local-nav-shelf-sub-nav-section-link"></elements-loader>
+          <local-nav-shelf-sub-nav-section-link slot="sub-nav-section-link" link-text="Members" link-href="/games/apex-legends/about/characters" link-target="_self" unresolved>
+            <a href="/games/apex-legends/about/characters">Members</a>
+          </local-nav-shelf-sub-nav-section-link>
+          <elements-loader elements="local-nav-shelf-sub-nav-section-link"></elements-loader>
+          <local-nav-shelf-sub-nav-section-link slot="sub-nav-section-link" link-text="Games" link-href="/games/apex-legends/maps" link-target="_blank" unresolved>
+            <a href="/games/apex-legends/maps">Games</a>
+          </local-nav-shelf-sub-nav-section-link>
+          <elements-loader elements="local-nav-shelf-sub-nav-section-link"></elements-loader>
+          <local-nav-shelf-sub-nav-section-link slot="sub-nav-section-link" link-text="FAQ" link-href="/games/apex-legends/about/frequently-asked-questions" link-target="_self" unresolved>
+            <a href="/games/apex-legends/about/frequently-asked-questions">FAQ</a>
+          </local-nav-shelf-sub-nav-section-link>
+        </local-nav-shelf-sub-nav-section>
+      </local-nav-shelf-sub-nav>
+      <elements-loader elements="local-nav-shelf-sub-nav"></elements-loader>
+      <local-nav-shelf-sub-nav slot="local-nav-shelf-link" toggle-text="News &amp; Media" theme="light" type="simple" unresolved>
+        <elements-loader elements="local-nav-shelf-sub-nav-section"></elements-loader>
+        <local-nav-shelf-sub-nav-section title-text="" slot="sub-nav-section" unresolved>
+          <elements-loader elements="local-nav-shelf-sub-nav-section-link"></elements-loader>
+          <local-nav-shelf-sub-nav-section-link slot="sub-nav-section-link" link-text="Latest News" link-href="/games/apex-legends/news" link-target="_self" unresolved>
+            <a href="/games/apex-legends/news">Latest News</a>
+          </local-nav-shelf-sub-nav-section-link>
+          <elements-loader elements="local-nav-shelf-sub-nav-section-link"></elements-loader>
+          <elements-loader elements="local-nav-shelf-sub-nav-section-link"></elements-loader>
+          <local-nav-shelf-sub-nav-section-link slot="sub-nav-section-link" link-text="Latest Media" link-href="/games/apex-legends/media" link-target="_self" unresolved>
+            <a href="/games/apex-legends/media">Latest Media</a>
+          </local-nav-shelf-sub-nav-section-link>
+          <elements-loader elements="local-nav-shelf-sub-nav-section-link"></elements-loader>
+        </local-nav-shelf-sub-nav-section>
+      </local-nav-shelf-sub-nav>
+      <elements-loader elements="local-nav-shelf-sub-nav"></elements-loader>
+      <local-nav-shelf-sub-nav slot="local-nav-shelf-link" toggle-text="Community" theme="light" type="narrow" unresolved>
+        <elements-loader elements="local-nav-shelf-sub-nav-section"></elements-loader>
+        <local-nav-shelf-sub-nav-section title-text="Social" slot="sub-nav-section" unresolved>
+          <elements-loader elements="local-nav-shelf-sub-nav-section-link"></elements-loader>
+          <local-nav-shelf-sub-nav-section-link slot="sub-nav-section-link" link-text="Twitter" link-href="https://twitter.com/PlayApex" link-target="_blank" unresolved>
+            <a href="https://twitter.com/PlayApex">Twitter</a>
+          </local-nav-shelf-sub-nav-section-link>
+          <elements-loader elements="local-nav-shelf-sub-nav-section-link"></elements-loader>
+          <local-nav-shelf-sub-nav-section-link slot="sub-nav-section-link" link-text="Instagram" link-href="https://www.instagram.com/playapex/" link-target="_blank" unresolved>
+            <a href="https://www.instagram.com/playapex/">Instagram</a>
+          </local-nav-shelf-sub-nav-section-link>
+          <elements-loader elements="local-nav-shelf-sub-nav-section-link"></elements-loader>
+          <local-nav-shelf-sub-nav-section-link slot="sub-nav-section-link" link-text="Facebook" link-href="https://www.facebook.com/playapex" link-target="_blank" unresolved>
+            <a href="https://www.facebook.com/playapex">Facebook</a>
+          </local-nav-shelf-sub-nav-section-link>
+          <elements-loader elements="local-nav-shelf-sub-nav-section-link"></elements-loader>
+          <local-nav-shelf-sub-nav-section-link slot="sub-nav-section-link" link-text="Youtube" link-href="https://www.youtube.com/playapex" link-target="_blank" unresolved>
+            <a href="https://www.youtube.com/playapex">Youtube</a>
+          </local-nav-shelf-sub-nav-section-link>
+          <elements-loader elements="local-nav-shelf-sub-nav-section-link"></elements-loader>
+          <local-nav-shelf-sub-nav-section-link slot="sub-nav-section-link" link-text="Twitch" link-href="https://www.twitch.tv/playapex" link-target="_blank" unresolved>
+            <a href="https://www.twitch.tv/playapex">Twitch</a>
+          </local-nav-shelf-sub-nav-section-link>
+        </local-nav-shelf-sub-nav-section>
+        <elements-loader elements="local-nav-shelf-sub-nav-section"></elements-loader>
+        <local-nav-shelf-sub-nav-section title-text="Community" slot="sub-nav-section" unresolved>
+          <elements-loader elements="local-nav-shelf-sub-nav-section-link"></elements-loader>
+          <local-nav-shelf-sub-nav-section-link slot="sub-nav-section-link" link-text="Forums" link-href="https://answers.ea.com/t5/Apex-Legends/ct-p/apex-legends-en" link-target="_self" unresolved>
+            <a href="https://answers.ea.com/t5/Apex-Legends/ct-p/apex-legends-en">Forums</a>
+          </local-nav-shelf-sub-nav-section-link>
+        </local-nav-shelf-sub-nav-section>
+        <elements-loader elements="local-nav-shelf-sub-nav-section"></elements-loader>
+      </local-nav-shelf-sub-nav>
+      <elements-loader elements="local-nav-shelf-sub-nav-section-link"></elements-loader>
+      <local-nav-shelf-sub-nav-section-link slot="sub-nav-section-link" link-text="Community Guidelines" link-href="/games/apex-legends/community-tournament-guidelines" link-target="_self" unresolved>
+        <a href="/games/apex-legends/community-tournament-guidelines">Community Guidelines</a>
+      </local-nav-shelf-sub-nav-section-link>
+      <elements-loader elements="local-nav-drawer-sub-nav-advanced"></elements-loader>
+      <local-nav-drawer-sub-nav-advanced slot="local-nav-drawer-link" toggle-text="About" toggle-tooltip="" theme="light" type="narrow" unresolved>
+        <elements-loader elements="local-nav-drawer-sub-nav-section, link"></elements-loader>
+        <local-nav-drawer-sub-nav-section slot="local-nav-drawer-sub-nav-section" title-text="Overview" unresolved>
+          <link slot="local-nav-drawer-sub-nav-section-link" link-href="/games/apex-legends/lore-hub" link-title="" link-text="About Our Group" unresolved>
+            <a href="/games/apex-legends/lore-hub">About Our Group</a>
+          </link>
+          <link slot="local-nav-drawer-sub-nav-section-link" link-href="/games/apex-legends/about/frequently-asked-questions" link-title="" link-text="FAQ" unresolved>
+            <a href="/games/apex-legends/about/frequently-asked-questions">FAQ</a>
+          </link>
+          <link slot="local-nav-drawer-sub-nav-section-link" link-href="/games/apex-legends/about/pc-system-requirements" link-title="" link-text="Members" unresolved>
+            <a href="/games/apex-legends/about/pc-system-requirements">Members</a>
+          </link>
+          <link slot="local-nav-drawer-sub-nav-section-link" link-href="/games/apex-legends/credits" link-title="" link-text="Games" unresolved>
+            <a href="/games/apex-legends/credits">Games</a>
+          </link>
+        </local-nav-drawer-sub-nav-section>
+      </local-nav-drawer-sub-nav-advanced>
+      <elements-loader elements="local-nav-drawer-sub-nav-advanced"></elements-loader>
+      <local-nav-drawer-sub-nav-advanced slot="local-nav-drawer-link" toggle-text="News &amp; Media" toggle-tooltip="" theme="light" type="simple" unresolved>
+        <elements-loader elements="link"></elements-loader>
+        <link slot="local-nav-drawer-sub-link" class="eapl-local-nav__drawer-sub-link" link-href="/games/apex-legends/news" link-title="" link-text="Latest News" text-color="" unresolved>
+          <a href="/games/apex-legends/news">Latest News</a>
+        </link>
+        <elements-loader elements="link"></elements-loader>
+        <link slot="local-nav-drawer-sub-link" class="eapl-local-nav__drawer-sub-link" link-href="/games/apex-legends/media" link-title="" link-text="Latest Media" text-color="" unresolved>
+          <a href="/games/apex-legends/media">Latest Media</a>
+        </link>
+      </local-nav-drawer-sub-nav-advanced>
+      <elements-loader elements="local-nav-drawer-sub-nav-advanced"></elements-loader>
+      <local-nav-drawer-sub-nav-advanced slot="local-nav-drawer-link" toggle-text="Community" toggle-tooltip="" theme="light" type="narrow" unresolved>
+        <elements-loader elements="local-nav-drawer-sub-nav-section, link"></elements-loader>
+        <local-nav-drawer-sub-nav-section slot="local-nav-drawer-sub-nav-section" title-text="Social" unresolved>
+          <link slot="local-nav-drawer-sub-nav-section-link" link-href="https://twitter.com/PlayApex" link-title="" link-text="Twitter" unresolved>
+            <a href="https://twitter.com/PlayApex">Twitter</a>
+          </link>
+          <link slot="local-nav-drawer-sub-nav-section-link" link-href="https://www.instagram.com/playapex/" link-title="" link-text="Instagram" unresolved>
+            <a href="https://www.instagram.com/playapex/">Instagram</a>
+          </link>
+          <link slot="local-nav-drawer-sub-nav-section-link" link-href="https://www.facebook.com/playapex" link-title="" link-text="Facebook" unresolved>
+            <a href="https://www.facebook.com/playapex">Facebook</a>
+          </link>
+          <link slot="local-nav-drawer-sub-nav-section-link" link-href="https://www.youtube.com/playapex" link-title="" link-text="Youtube" unresolved>
+            <a href="https://www.youtube.com/playapex">Youtube</a>
+          </link>
+          <link slot="local-nav-drawer-sub-nav-section-link" link-href="https://www.twitch.tv/playapex" link-title="" link-text="Twitch" unresolved>
+            <a href="https://www.twitch.tv/playapex">Twitch</a>
+          </link>
+        </local-nav-drawer-sub-nav-section>
+        <elements-loader elements="local-nav-drawer-sub-nav-section, link"></elements-loader>
+        <local-nav-drawer-sub-nav-section slot="local-nav-drawer-sub-nav-section" title-text="Community" unresolved>
+          <link slot="local-nav-drawer-sub-nav-section-link" link-href="https://answers.ea.com/t5/Apex-Legends/ct-p/apex-legends-en" link-title="" link-text="Forums" unresolved>
+            <a href="https://answers.ea.com/t5/Apex-Legends/ct-p/apex-legends-en">Forums</a>
+          </link>
+        </local-nav-drawer-sub-nav-section>
+      </local-nav-drawer-sub-nav-advanced>
+      <elements-loader elements="link"></elements-loader>
+      <link slot="local-nav-drawer-sub-link" class="eapl-local-nav__drawer-sub-link" link-href="/games/apex-legends/community-tournament-guidelines" link-title="" link-text="Community Guidelines" text-color="" unresolved>
+        <a href="/games/apex-legends/community-tournament-guidelines">Community Guidelines</a>
+      </link>
+      <!-- Side Dropdown Menu End-->
+      <!-- Thats an l Dropdown Menu start-->
+      <elements-loader elements="cta-dropdown, hybrid-modal-invoker"></elements-loader>
+      <cta-dropdown slot="cta-dropdown" theme="light" cta-title-text="Thats and L*" cta-link="https://google.com" border-color="none" fill-color="brand" text-color="light" unresolved>
+        <container>
+          <elements-loader elements="cta"></elements-loader>
+          <cta slot="cta" type="standard" link-url="https://linktootherpartofpage.com/SUBPAGE/OTHERPAGE" link-title="Internal Name (You can ignore me)" link-text="Internal Text (you can ignore me)" icon="none" fill-color="none" text-color="light" stroke-color="light" target="_self" intent="misc" emphasis="primary" unresolved>
+            <a href="https://linktootherpartofpage.com/SUBPAGE/OTHERPAGE" title="HOVER TEXT"> The Text On The Page </a>
+          </cta>
+        </container>
+        <container>
+          <elements-loader elements="cta"></elements-loader>
+          <cta slot="cta" type="standard" link-url="https://linktootherpartofpage.com/SUBPAGE/OTHERPAGE" link-title="Internal Name (You can ignore me)" link-text="Internal Text (you can ignore me)" icon="none" fill-color="none" text-color="light" stroke-color="light" target="_self" intent="misc" emphasis="primary" unresolved>
+            <a href="https://linktootherpartofpage.com/SUBPAGE/OTHERPAGE" title="HOVER TEXT"> The Text On The Page </a>
+          </cta>
+        </container>
+        <container>
+          <elements-loader elements="cta"></elements-loader>
+          <cta slot="cta" type="standard" link-url="https://linktootherpartofpage.com/SUBPAGE/OTHERPAGE" link-title="Internal Name (You can ignore me)" link-text="Internal Text (you can ignore me)" icon="none" fill-color="none" text-color="light" stroke-color="light" target="_self" intent="misc" emphasis="primary" unresolved>
+            <a href="https://linktootherpartofpage.com/SUBPAGE/OTHERPAGE" title="HOVER TEXT"> The Text On The Page </a>
+          </cta>
+        </container>
+        <container>
+          <elements-loader elements="cta"></elements-loader>
+          <cta slot="cta" type="standard" link-url="https://linktootherpartofpage.com/SUBPAGE/OTHERPAGE" link-title="Internal Name (You can ignore me)" link-text="Internal Text (you can ignore me)" icon="none" fill-color="none" text-color="light" stroke-color="light" target="_self" intent="misc" emphasis="primary" unresolved>
+            <a href="https://linktootherpartofpage.com/SUBPAGE/OTHERPAGE" title="HOVER TEXT"> The Text On The Page </a>
+          </cta>
+        </container>
+        <container>
+          <elements-loader elements="cta"></elements-loader>
+          <cta slot="cta" type="standard" link-url="https://linktootherpartofpage.com/SUBPAGE/OTHERPAGE" link-title="Internal Name (You can ignore me)" link-text="Internal Text (you can ignore me)" icon="none" fill-color="none" text-color="light" stroke-color="light" target="_self" intent="misc" emphasis="primary" unresolved>
+            <a href="https://linktootherpartofpage.com/SUBPAGE/OTHERPAGE" title="HOVER TEXT"> The Text On The Page </a>
+          </cta>
+        </container>
+      </cta-dropdown>
+      <!-- above is where the code is for full screen (lol) -->
+      <!-- Thats an l Dropdown Menu  CODE START-->
+      <elements-loader elements="local-nav-dropdown"></elements-loader>
+      <local-nav-dropdown slot="local-nav-dropdown" theme="light" menu-title="" cta-title-text="Not an L" cta-link="/games/apex-legends/play-now-for-free" border-color="none" fill-color="brand" text-color="light" unresolved>
+        <container>
+          <elements-loader elements="cta"></elements-loader>
+          <container>
+            <elements-loader elements="cta"></elements-loader>
+            <cta slot="cta" type="standard" link-url="https://LINKTOOTHERPARTOFPAGE.com/SUBPAGE/OTHERPAGE" link-title="Internal Name (You can ignore me)" link-text="Internal Text (you can ignore me)" icon="none" fill-color="none" text-color="light" stroke-color="light" target="_self" intent="misc" emphasis="primary" unresolved>
+              <a href="https://LINKTOOTHERPARTOFPAGE.com/SUBPAGE/OTHERPAGE" title="HOVER TEXT"> The Text On The Page </a>
+            </cta>
+          </container>
+        </container>
+        <container>
+          <elements-loader elements="cta"></elements-loader>
+          <cta slot="cta" type="standard" link-url="https://LINKTOOTHERPARTOFPAGE.com/SUBPAGE/OTHERPAGE" link-title="Internal Name (You can ignore me)" link-text="Internal Text (you can ignore me)" icon="none" fill-color="none" text-color="light" stroke-color="light" target="_self" intent="misc" emphasis="primary" unresolved>
+            <a href="https://LINKTOOTHERPARTOFPAGE.com/SUBPAGE/OTHERPAGE" title="HOVER TEXT"> The Text On The Page </a>
+          </cta>
+        </container>
+        <container>
+          <elements-loader elements="cta"></elements-loader>
+          <cta slot="cta" type="standard" link-url="https://LINKTOOTHERPARTOFPAGE.com/SUBPAGE/OTHERPAGE" link-title="Internal Name (You can ignore me)" link-text="Internal Text (you can ignore me)" icon="none" fill-color="none" text-color="light" stroke-color="light" target="_self" intent="misc" emphasis="primary" unresolved>
+            <a href="https://LINKTOOTHERPARTOFPAGE.com/SUBPAGE/OTHERPAGE" title="HOVER TEXT"> The Text On The Page </a>
+          </cta>
+        </container>
+        <container>
+          <elements-loader elements="cta"></elements-loader>
+          <cta slot="cta" type="standard" link-url="https://LINKTOOTHERPARTOFPAGE.com/SUBPAGE/OTHERPAGE" link-title="Internal Name (You can ignore me)" link-text="Internal Text (you can ignore me)" icon="none" fill-color="none" text-color="light" stroke-color="light" target="_self" intent="misc" emphasis="primary" unresolved>
+            <a href="https://LINKTOOTHERPARTOFPAGE.com/SUBPAGE/OTHERPAGE" title="HOVER TEXT"> The Text On The Page </a>
+          </cta>
+        </container>
+        <container>
+          <elements-loader elements="cta"></elements-loader>
+          <cta slot="cta" type="standard" link-url="https://LINKTOOTHERPARTOFPAGE.com/SUBPAGE/OTHERPAGE" link-title="Internal Name (You can ignore me)" link-text="Internal Text (you can ignore me)" icon="none" fill-color="none" text-color="light" stroke-color="light" target="_self" intent="misc" emphasis="primary" unresolved>
+            <a href="https://LINKTOOTHERPARTOFPAGE.com/SUBPAGE/OTHERPAGE" title="HOVER TEXT"> The Text On The Page </a>
+          </cta>
+        </container>
+        <container>
+          <elements-loader elements="cta"></elements-loader>
+          <cta slot="cta" type="standard" link-url="https://LINKTOOTHERPARTOFPAGE.com/SUBPAGE/OTHERPAGE" link-title="Internal Name (You can ignore me)" link-text="Internal Text (you can ignore me)" icon="none" fill-color="none" text-color="light" stroke-color="light" target="_self" intent="misc" emphasis="primary" unresolved>
+            <a href="https://LINKTOOTHERPARTOFPAGE.com/SUBPAGE/OTHERPAGE" title="HOVER TEXT"> The Text On The Page </a>
+          </cta>
+        </container>
+      </local-nav-dropdown>
+    </local-nav-advanced>
+    <!-- Most likey the end to Thats An L"-->
+    <elements-loader elements="modal"></elements-loader>
+    <modal modal unresolved id="pc-download" theme="dark" type="full-bleed">
+      <elements-loader elements="section"></elements-loader>
+      <section unresolved slot="section" type="railed" layout="100" background-color="light" background-overflow="hidden" spacing-top="none" spacing-bottom="none" background-image-smallest="https://media.contentapi.ea.com/content/dam/apex-legends/common/apex-section-bg-tan-texture-longer-xl.jpg.adapt.320w.jpg" background-image-small="https://media.contentapi.ea.com/content/dam/apex-legends/common/apex-section-bg-tan-texture-longer-xl.jpg.adapt.768w.jpg" background-image-medium="https://media.contentapi.ea.com/content/dam/apex-legends/common/apex-section-bg-tan-texture-longer-xl.jpg.adapt.1024w.jpg" background-image-large="https://media.contentapi.ea.com/content/dam/apex-legends/common/apex-section-bg-tan-texture-longer-xl.jpg.adapt.1456w.jpg" background-image-largest="https://media.contentapi.ea.com/content/dam/apex-legends/common/apex-section-bg-tan-texture-longer-xl.jpg.adapt.1920w.jpg" image-tooltip="">
+        <img src="https://media.contentapi.ea.com/content/dam/apex-legends/common/apex-section-bg-tan-texture-longer-xl.jpg.adapt.320w.jpg" alt="" srcset="https://media.contentapi.ea.com/content/dam/apex-legends/common/apex-section-bg-tan-texture-longer-xl.jpg.adapt.320w.jpg 320w, https://media.contentapi.ea.com/content/dam/apex-legends/common/apex-section-bg-tan-texture-longer-xl.jpg.adapt.768w.jpg 768w, https://media.contentapi.ea.com/content/dam/apex-legends/common/apex-section-bg-tan-texture-longer-xl.jpg.adapt.1024w.jpg 1024w, https://media.contentapi.ea.com/content/dam/apex-legends/common/apex-section-bg-tan-texture-longer-xl.jpg.adapt.1456w.jpg 1320w, https://media.contentapi.ea.com/content/dam/apex-legends/common/apex-section-bg-tan-texture-longer-xl.jpg.adapt.1920w.jpg 1456w" />
+        <section-column slot="section-column" indent-left="1" indent-right="1" text-align="center" mobile-order="0">
+          <elements-loader elements="spacer"></elements-loader>
+          <spacer unresolved smallest="3rem" small="3rem" medium="3rem" large="3rem" largest="3rem"></spacer>
+          <elements-loader elements="subheading"></elements-loader>
+          <subheading unresolved type="ordered" layout="medium" text-align="center" text-color="dark" title-text="Download Apex Legends on PC" spacing-top="medium" spacing-bottom="small">
+            <h3>Download Apex Legends on PC</h3>
+          </subheading>
+          <elements-loader elements="grid"></elements-loader>
+          <grid type="ordered" tile-media-shape="rectangle" layout="3up" tile-type="vertical" tile-text-align="center" tile-text-color="light" tile-color="light" hide-media hide-eyebrow hide-title hide-copy hide-brand-stroke hide-byline spacing-top="none" spacing-bottom="none" tile-scrim-color="none" tile-scrim-opacity="medium" tile-align="center" animate-in-order="" animate-out-order="" unresolved>
+            <elements-loader elements="cta-tile"></elements-loader>
+            <container slot="container">
+              <cta-tile slot="cta-tile" background-color="brand" type="filled" unresolved>
+                <elements-loader elements="cta"></elements-loader>
+                <cta slot="cta" type="graphic" link-url="https://origin-a.akamaihd.net/Origin-Client-Download/origin/live/194908/ApexLegendsInstaller.exe" link-title="Download on PC" link-text="Download on PC" icon="custom" custom-icon="&lt;svg
+																								xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;150&quot; height=&quot;150&quot; viewBox=&quot;0 0 150 150&quot;&gt;   &lt;path fill=&quot;#FFF&quot; fill-rule=&quot;evenodd&quot; d=&quot;M59,106 L8,106 C3.581722,106 5.41083001e-16,102.418278 0,98 L0,8 C-5.41083001e-16,3.581722 3.581722,8.11624501e-16 8,0 L142,0 C146.418278,-8.11624501e-16 150,3.581722 150,8 L150,98 C150,102.418278 146.418278,106 142,106 L91,106 L91,138 L119,138 L119,150 L31,150 L31,138 L59,138 L59,106 Z M134,16 L16,16 L16,90 L134,90 L134,16 Z&quot;/&gt; &lt;/svg&gt;" fill-color="none" text-color="light" stroke-color="none" target="_self" intent="misc" emphasis="primary" unresolved>
+                  <a href="https://origin-a.akamaihd.net/Origin-Client-Download/origin/live/194908/ApexLegendsInstaller.exe" title="Download on PC"> Download on PC </a>
+                </cta>
+              </cta-tile>
+            </container>
+          </grid>
+          <elements-loader elements="text"></elements-loader>
+          <text unresolved slot="text" text-color="dark">
+            <p style="text-align: center;">This game includes optional in-game purchases of virtual currency that can be used to acquire virtual in-game items, including a random selection of virtual in-game items.</p>
+            <p style="text-align: center;">
+              <span style="color: rgb(255,0,0);">
+                <a style="color: rgb(255,0,0);" href="http://tos.ea.com/legalapp/termsofsale/US/en/PC/" target="_blank">Terms and Conditions</a>
+              </span>
+            </p>
+            <p style="text-align: center;">
+              <span style="color: rgb(255,0,0);">
+                <a style="color: rgb(255,0,0);" href="http://tos.ea.com/legalapp/WEBTERMS/US/en/PC/" target="_blank">User Agreement</a>
+              </span>
+            </p>
+          </text>
+          <div>
+            <!--teen rating logo-->
+            <img src="https://media.contentapi.ea.com/content/dam/apex-legends/common/age-ratings/apex-esrb-rating-t-interactive-june-2021.svg" />
+          </div>
+          <elements-loader elements="spacer"></elements-loader>
+          <spacer unresolved smallest="3rem" small="3rem" medium="3rem" large="3rem" largest="3rem"></spacer>
+        </section-column>
+      </section>
+    </modal>
+    <main>
+      <elements-loader elements="section"></elements-loader>
+      <section unresolved slot="section" type="full-bleed" layout="100" background-color="custom" custom-background-value="#000000" background-overflow="hidden" spacing-top="none" spacing-bottom="none">
+        <section-column slot="section-column" indent-left="" indent-right="" text-align="center" mobile-order="0">
+          <elements-loader elements="spacer"></elements-loader>
+          <spacer unresolved></spacer>
+          <elements-loader elements="ea-hero"></elements-loader>
+          <hero layout="medium" text-position="center" text-align="center" text-color="light" stacked background-color="none" copy-text="Evolve" logo-image="logo goes here" logo-alt="logo goes here" spacing-bottom="none" spacing-top="none" scrim-color="none" scrim-opacity="medium" unresolved custom-styles="{}">
+            <p>Show your caliber in Apex Legends: Arsenal with new Legend Ballistic, an updated World&#x27;s Edge, evolved Firing Range and more!</p>
+            <img src="https://media.contentapi.ea.com/content/dam/apex-legends/common/logos/apex-hero-medium-logo-light.svg" alt="" />
+            <elements-loader elements="cta"></elements-loader>
+            <cta slot="cta" type="standard" link-url="/en-us/games/apex-legends/play-now-for-free" link-title="Button 1" link-text="Button 1" icon="none" fill-color="brand" text-color="light" stroke-color="none" target="_self" intent="buy" emphasis="primary" unresolved>
+              <a href="/en-us/games/apex-legends/play-now-for-free" title="PLAY FREE NOW"> PLAY FREE NOW* </a>
+            </cta>
+            <elements-loader elements="cta"></elements-loader>
+            <cta slot="cta" type="standard" link-title="WATCH THE VIDEO" link-text="Watch a video about us!" icon="play" fill-color="brand" text-color="light" stroke-color="none" target="_self" intent="media" modal-id="1" emphasis="primary" unresolved>
+              <a title="WATCH THE TRAILER"> Watch It </a>
+            </cta>
+          </hero>
+          <elements-loader elements="spacer"></elements-loader>
+          <spacer unresolved></spacer>
+        </section-column>
+        <!-- Video Behind Start Page -->
+        <elements-loader elements="html5-video"></elements-loader>
+        <html5-video slot="html5-video" webm-src-smallest="Background video" mp4-src-smallest="Background video" webm-src-small="Background video" mp4-src-small="Background video" webm-src-medium="Background video" mp4-src-medium="Background video" webm-src="Background video" mp4-src="Background video" webm-src-largest="Background video" mp4-src-largest="Background video" autoplay="" loop="" muted="" unresolved></ea-html5-video>
+      </section>
+      <elements-loader elements="hero"></elements-loader>
+      <hero layout="medium" text-position="left" text-align="center" text-color="light" stacked background-color="none" title-text="Unfinished Text" copy-text="oops!" image-smallest="put the stored image here i sent it to alex " image-tooltip="" spacing-bottom="none" spacing-top="none" scrim-color="none" scrim-opacity="medium" unresolved custom-styles="{}">
+        <h1>Take Your Shot in Apex Legends: Arsenal</h1>
+        <p>It&#x27;s time to show your caliber. New Legend Ballistic is here to teach the Legends some manners on an updated World&#x27;s Edge. Hit the newly evolved Firing Range and get ready: in the heat of the Games, you might only get one shot.</p>
+        <img src="https://media.contentapi.ea.com/content/dam/apex-legends/images/2023/05/apex-hero-md-s17-home-page-7x2-xl.jpg.adapt.crop16x9.320w.jpg" alt="" srcset="https://media.contentapi.ea.com/content/dam/apex-legends/images/2023/05/apex-hero-md-s17-home-page-7x2-xl.jpg.adapt.crop16x9.320w.jpg 320w, https://media.contentapi.ea.com/content/dam/apex-legends/images/2023/05/apex-hero-md-s17-home-page-7x2-xl.jpg.adapt.crop16x9.767w.jpg 768w, https://media.contentapi.ea.com/content/dam/apex-legends/images/2023/05/apex-hero-md-s17-home-page-7x2-xl.jpg.adapt.crop2x1.1023w.jpg 1024w, https://media.contentapi.ea.com/content/dam/apex-legends/images/2023/05/apex-hero-md-s17-home-page-7x2-xl.jpg.adapt.crop5x2.1455w.jpg 1320w, https://media.contentapi.ea.com/content/dam/apex-legends/images/2023/05/apex-hero-md-s17-home-page-7x2-xl.jpg.adapt.crop7x2.1920w.jpg 1456w" />
+        <elements-loader elements="cta"></elements-loader>
+        <cta slot="cta" type="standard" link-url="/games/apex-legends/arsenal" link-text="Learn More" icon="none" fill-color="brand" text-color="light" stroke-color="none" target="_self" intent="navigation" emphasis="primary" unresolved>
+          <a href="/games/apex-legends/arsenal"> Learn More </a>
+        </cta>
+      </hero>
+      <elements-loader elements="section"></elements-loader>
+      <section unresolved slot="section" type="railed" layout="100" background-color="none" background-overflow="visible" spacing-top="none" spacing-bottom="none" mp4-src="" webm-src="" background-image-smallest="https://media.contentapi.ea.com/content/dam/apex-legends/common/apex-section-bg-homepage-news-xl.jpg.adapt.320w.jpg" background-image-small="https://media.contentapi.ea.com/content/dam/apex-legends/common/apex-section-bg-homepage-news-xl.jpg.adapt.768w.jpg" background-image-medium="https://media.contentapi.ea.com/content/dam/apex-legends/common/apex-section-bg-homepage-news-xl.jpg.adapt.1024w.jpg" background-image-large="https://media.contentapi.ea.com/content/dam/apex-legends/common/apex-section-bg-homepage-news-xl.jpg.adapt.1456w.jpg" background-image-largest="https://media.contentapi.ea.com/content/dam/apex-legends/common/apex-section-bg-homepage-news-xl.jpg.adapt.1920w.jpg" image-tooltip="">
+        <img src="https://media.contentapi.ea.com/content/dam/apex-legends/common/apex-section-bg-homepage-news-xl.jpg.adapt.320w.jpg" alt="" srcset="https://media.contentapi.ea.com/content/dam/apex-legends/common/apex-section-bg-homepage-news-xl.jpg.adapt.320w.jpg 320w, https://media.contentapi.ea.com/content/dam/apex-legends/common/apex-section-bg-homepage-news-xl.jpg.adapt.768w.jpg 768w, https://media.contentapi.ea.com/content/dam/apex-legends/common/apex-section-bg-homepage-news-xl.jpg.adapt.1024w.jpg 1024w, https://media.contentapi.ea.com/content/dam/apex-legends/common/apex-section-bg-homepage-news-xl.jpg.adapt.1456w.jpg 1320w, https://media.contentapi.ea.com/content/dam/apex-legends/common/apex-section-bg-homepage-news-xl.jpg.adapt.1920w.jpg 1456w" />
+        <section-column slot="section-column" indent-left="" indent-right="" text-align="left" mobile-order="0">
+          <elements-loader elements="subheading"></elements-loader>
+          <subheading unresolved type="ordered" layout="small" title-text="&nbsp;" spacing-top="none" spacing-bottom="none">
+            <h3>&amp;nbsp</h3>
+          </subheading>
+          <elements-loader elements="subheading"></elements-loader>
+          <subheading unresolved type="ordered" layout="small" text-align="center" text-color="dark" title-text="Latest News" spacing-top="small" spacing-bottom="small">
+            <h3>Latest News</h3>
+          </subheading>
+          <elements-loader elements="tile"></elements-loader>
+          <container slot="container" filter-key="All">
+            <tile unresolved slot="tile" style="--animation-index:2" media="3rd immage link" eyebrow-text="Evolve Website Notes" eyebrow-secondary-text="date" title-text="Literally Nothing" tooltip="Literally Nothing">
+              <h3>Website notes</h3>
+              <div>Apex Legends</div>
+              <div>May 8, 2023</div>
+              <tile-copy slot="copy"> Website Notes</tile-copy>
+              <elements-loader elements="cta"></elements-loader>
+              <cta slot="cta" type="standard" link-url="/games/apex-legends/news/arsenal-patch-notes" link-text="Read More" icon="none" fill-color="none" text-color="dark" intent="news" unresolved>
+                <a href="/games/apex-legends/news/arsenal-patch-notes"> Read More </a>
+              </cta>
+            </tile>
+          </container>
+          <elements-loader elements="subheading"></elements-loader>
+          <subheading unresolved type="ordered" layout="small" text-align="left" text-color="dark" title-text="&nbsp;" spacing-top="medium" spacing-bottom="medium">
+            <h3>&amp;nbsp</h3>
+          </subheading>
+        </section-column>
+      </section>
+      <elements-loader elements="section"></elements-loader>
+      <section unresolved slot="section" type="railed" layout="100" background-color="custom" custom-background-value="#000000" background-overflow="hidden" spacing-top="none" spacing-bottom="none" background-image-smallest="Replace with 4th link" image-tooltip="">
+        <img src="Replace with 4th link" />
+        <section-column slot="section-column" text-align="center" mobile-order="0">
+          <elements-loader elements="text"></elements-loader>
+          <text unresolved slot="text" text-color="light">
+            <div style="max-width: 928.0px; margin: 0 auto;">
+              <h2 class="d4 d4-light">Beyond Gaming</h2>
+              <p class="h5 h5-light">Creating games that bring you games beyond the standards. </p>
+            </div>
+          </text>
+          <elements-loader elements="grid"></elements-loader>
+          <grid type="ordered" tile-media-shape="rectangle" layout="3up" tile-type="vertical" tile-text-align="center" tile-text-color="light" tile-color="none" hide-eyebrow hide-ctas hide-brand-stroke hide-byline spacing-top="none" spacing-bottom="none" tile-scrim-color="none" tile-scrim-opacity="medium" tile-align="center" animate-in-order="" animate-out-order="" unresolved>
+            <elements-loader elements="tile"></elements-loader>
+            <container slot="container" filter-key="All">
+              <tile unresolved slot="tile" style="--animation-index:0" media="https://media.contentapi.ea.com/content/dam/apex-legends/images/2018/12/apex-grid-tile-battle-royale.png.adapt.crop16x9.652w.png" title-text="&lt;b&gt;Our Team!&lt;/b&gt;" tooltip="">
+                <h3>&lt;b&gt;Our Team!&lt;/b&gt;</h3>
+                <tile-copy slot="copy">
+                  <p>Currently there are only 2 members. Contact us here @</p>
+                </tile-copy>
+              </tile>
+            </container>
+            <elements-loader elements="tile"></elements-loader>
+            <container slot="container" filter-key="All">
+              <tile unresolved slot="tile" style="--animation-index:1" media="https://media.contentapi.ea.com/content/dam/apex-legends/images/2018/12/apex-grid-tile-sci-fi-wild-west.png.adapt.crop16x9.652w.png" title-text="&lt;b&gt;What are we working on?&lt;/b&gt;" tooltip="">
+                <h3>&lt;b&gt;The Ultimate Squad&lt;/b&gt;</h3>
+                <tile-copy slot="copy">
+                  <p>Currently nothing is being worked on!</p>
+                </tile-copy>
+              </tile>
+            </container>
+            <elements-loader elements="tile"></elements-loader>
+            <container slot="container" filter-key="All">
+              <tile unresolved slot="tile" style="--animation-index:2" media="https://media.contentapi.ea.com/content/dam/apex-legends/images/2018/12/apex-grid-tile-lawless-world.png.adapt.crop16x9.652w.png" title-text="&lt;b&gt;Who are we?&lt;/b&gt;" tooltip="">
+                <h3>&lt;b&gt;Strategic Combat&lt;/b&gt;</h3>
+                <tile-copy slot="copy">
+                  <p>We are a small game dev company with a small following</p>
+                </tile-copy>
+              </tile>
+            </container>
+          </grid>
+        </section-column>
+      </section>
+      <elements-loader elements="spacer"></elements-loader>
+      <spacer unresolved smallest="3vw" small="3vw" medium="3vw" large="3vw" largest="3vw"></spacer>
+      <elements-loader elements="modal"></elements-loader>
+      <modal modal unresolved id="1" theme="dark" type="railed">
+        <elements-loader elements="youtube"></elements-loader>
+        <youtube unresolved slot="youtube" video-id="dQw4w9WgXcQ" playlist="" default-age-gate="" theme="light" icon-theme="light" autoplay="0" controls="1" rel="0" annotations="3" hide-info="0" age-gate-alignment="center-left" age-gate-message="This video is age-restricted and only available on Youtube." more-link-text="Learn More" more-link-url="https://support.google.com/youtube/answer/2802167?hl=en" watch-link-text="Watch on Youtube" cover-image-smallest="https://media.contentapi.ea.com/content/dam/apex-legends/videos/2023/04/23bbe5e7-20b7-8d96-6661-be9b8244a9f2.youtube/subassets/poster.jpg.adapt.crop16x9.320w.jpg" cover-image-small="https://media.contentapi.ea.com/content/dam/apex-legends/videos/2023/04/23bbe5e7-20b7-8d96-6661-be9b8244a9f2.youtube/subassets/poster.jpg.adapt.crop16x9.767w.jpg" cover-image-medium="https://media.contentapi.ea.com/content/dam/apex-legends/videos/2023/04/23bbe5e7-20b7-8d96-6661-be9b8244a9f2.youtube/subassets/poster.jpg.adapt.crop16x9.1023w.jpg" cover-image-large="https://media.contentapi.ea.com/content/dam/apex-legends/videos/2023/04/23bbe5e7-20b7-8d96-6661-be9b8244a9f2.youtube/subassets/poster.jpg.adapt.crop16x9.1455w.jpg" cover-image-largest="https://media.contentapi.ea.com/content/dam/apex-legends/videos/2023/04/23bbe5e7-20b7-8d96-6661-be9b8244a9f2.youtube/subassets/poster.jpg.adapt.crop16x9.1920w.jpg" cover-image-tooltip="" button-color="dark">
+          <div itemscope itemtype="http://schema.org/VideoObject">
+            <link itemprop="url" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+            <link itemprop="thumbnailUrl" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf0oVlytucM3OATSsdmDXlLMDPpHZOoriq5Q&usqp=CAU.jpg.adapt.crop16x9.1920w.jpg">
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ"></iframe>
+          </div>
+        </youtube>
+      </modal>
+      <elements-loader elements="ftue-ga-event-initiator"></elements-loader>
+      <ftue-ga-event-initiator></ftue-ga-event-initiator>
+      <div style="display: none;"></div>
+    </main>
+    <type-kit kit-url="//use.typekit.net/txn1klh.js"></type-kit>
+    <noscript>
+      <img src="https://www.ea.com/akam/13/pixel_23586424?a=dD01NTk1YTNkYjNmYTg1NGZiNTkyNzFhNmQ4OGJlODQ4NjBkOGYyMTViJmpzPW9mZg==" style="visibility: hidden; position: absolute; left: -999px; top: -999px;" />
+    </noscript>
+  </body>
+</html>
