@@ -222,6 +222,7 @@
       <style include="ea-shared-styles-typography-labels"></style>
     </custom-style>
     <custom-style>
+     
       <!-- The " --ea-theme-color:" changes all of the text Boxes Colors-->
       <style>
         html {
@@ -309,6 +310,7 @@
         }
       </style>
     </custom-style>
+          <!--end theme colors/text-->
     <ea-elements-loader elements="ea-network-nav, ea-player, ea-type-kit"></ea-elements-loader>
     <ea-network-nav unresolved userData="/user-data" content="//nds-network-nav.ea.com//en-us/network-nav" login-url="/login" logout-url="/logout" hide-logo></ea-network-nav>
     <ea-elements-loader elements="ea-page-background"></ea-elements-loader>
@@ -498,7 +500,7 @@
         </ea-container>
       </ea-cta-dropdown>
       <!-- above is where the code is for full screen (lol) -->
-      <!-- Thats an l Dropdown Menu  CODE START-->
+      <!-- Thats an l Dropdown Menu mobile menu start-->
       
       <ea-elements-loader elements="ea-local-nav-dropdown"></ea-elements-loader>
       <ea-local-nav-dropdown slot="local-nav-dropdown" theme="light" menu-title="" cta-title-text="Not an L" cta-link="/games/apex-legends/play-now-for-free" border-color="none" fill-color="brand" text-color="light" unresolved>
@@ -571,6 +573,8 @@
               </ea-cta-tile>
             </ea-container>
           </ea-grid>
+
+          <!--Terms and conditions / user agreement start-->
           <ea-elements-loader elements="ea-text"></ea-elements-loader>
           <ea-text unresolved slot="text" text-color="dark">
             <p style="text-align: center;">This game includes optional in-game purchases of virtual currency that can be used to acquire virtual in-game items, including a random selection of virtual in-game items.</p>
@@ -586,6 +590,8 @@
             </p>
           </ea-text>
           <div>
+            <!--Terms and conditions / user agreement end-->
+
             <!--teen rating logo-->
             <img src="https://media.contentapi.ea.com/content/dam/apex-legends/common/age-ratings/apex-esrb-rating-t-interactive-june-2021.svg" />
           </div>
@@ -617,7 +623,7 @@
           <ea-spacer unresolved></ea-spacer>
         </ea-section-column>
         
-        <!-- Video Behind Start Page -->
+        <!-- Video Behind Start Page code start-->
         
         <ea-elements-loader elements="ea-html5-video"></ea-elements-loader>
         <ea-html5-video slot="html5-video" webm-src-smallest="Background video" mp4-src-smallest="Background video" webm-src-small="Background video" mp4-src-small="Background video" webm-src-medium="Background video" mp4-src-medium="Background video" webm-src="Background video" mp4-src="Background video" webm-src-largest="Background video" mp4-src-largest="Background video" autoplay="" loop="" muted="" unresolved></ea-html5-video>
@@ -632,7 +638,8 @@
           <a href="/games/apex-legends/arsenal"> Learn More </a>
         </ea-cta>
       </ea-hero>
-     
+     <!-- Video Behind Start Page code end -->
+
       <ea-elements-loader elements="ea-section"></ea-elements-loader>
       <ea-section unresolved slot="section" type="railed" layout="100" background-color="none" background-overflow="visible" spacing-top="none" spacing-bottom="none" mp4-src="" webm-src="" background-image-smallest="https://media.contentapi.ea.com/content/dam/apex-legends/common/apex-section-bg-homepage-news-xl.jpg.adapt.320w.jpg" background-image-small="https://media.contentapi.ea.com/content/dam/apex-legends/common/apex-section-bg-homepage-news-xl.jpg.adapt.768w.jpg" background-image-medium="https://media.contentapi.ea.com/content/dam/apex-legends/common/apex-section-bg-homepage-news-xl.jpg.adapt.1024w.jpg" background-image-large="https://media.contentapi.ea.com/content/dam/apex-legends/common/apex-section-bg-homepage-news-xl.jpg.adapt.1456w.jpg" background-image-largest="https://media.contentapi.ea.com/content/dam/apex-legends/common/apex-section-bg-homepage-news-xl.jpg.adapt.1920w.jpg" image-tooltip="">
         <img src="https://media.contentapi.ea.com/content/dam/apex-legends/common/apex-section-bg-homepage-news-xl.jpg.adapt.320w.jpg" alt="" srcset="https://media.contentapi.ea.com/content/dam/apex-legends/common/apex-section-bg-homepage-news-xl.jpg.adapt.320w.jpg 320w, https://media.contentapi.ea.com/content/dam/apex-legends/common/apex-section-bg-homepage-news-xl.jpg.adapt.768w.jpg 768w, https://media.contentapi.ea.com/content/dam/apex-legends/common/apex-section-bg-homepage-news-xl.jpg.adapt.1024w.jpg 1024w, https://media.contentapi.ea.com/content/dam/apex-legends/common/apex-section-bg-homepage-news-xl.jpg.adapt.1456w.jpg 1320w, https://media.contentapi.ea.com/content/dam/apex-legends/common/apex-section-bg-homepage-news-xl.jpg.adapt.1920w.jpg 1456w" />
@@ -641,6 +648,8 @@
           <ea-subheading unresolved type="ordered" layout="small" title-text="&nbsp;" spacing-top="none" spacing-bottom="none">
             <h3>&amp;nbsp</h3>
           </ea-subheading>
+
+         <!-- News Start -->
           <ea-elements-loader elements="ea-subheading"></ea-elements-loader>
           <ea-subheading unresolved type="ordered" layout="small" text-align="center" text-color="dark" title-text="Latest News" spacing-top="small" spacing-bottom="small">
             <h3>Latest News</h3>
@@ -664,6 +673,8 @@
           </ea-subheading>
         </ea-section-column>
       </ea-section>
+<!--News End -->
+
       <ea-elements-loader elements="ea-section"></ea-elements-loader>
       <ea-section unresolved slot="section" type="railed" layout="100" background-color="custom" custom-background-value="#000000" background-overflow="hidden" spacing-top="none" spacing-bottom="none" background-image-smallest="Replace with 4th link" image-tooltip="">
         <img src="Replace with 4th link" />
