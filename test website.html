@@ -22,16 +22,7 @@
         max-width: 100%;
       }
     </style>
-    <script>
-      if (!CSS.supports('width', 'calc((var(--test))')) {
-        window.ShadyCSS = {
-          shimcssproperties: true
-        };
-      }
-      document.addEventListener('nds.typeKit.active', function() {
-        document.querySelector('html').removeAttribute('');
-      });
-    </script>
+  
     <script src="//unpkg.com/@webcomponents/webcomponentsjs@2.2.7/webcomponents-loader.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
     <script src="//w.soundcloud.com/player/api.js"></script>
@@ -56,64 +47,6 @@
         src: url(/assets/fonts/apex-legends/DukeFill_web.woff) format('woff');
       }
     </style>
-    <link href="https://fast.fonts.net/cssapi/d4e9a514-63ad-4b92-b0b9-b19163f3cb59.css" rel="stylesheet" />
-    <style>
-      @font-face {
-        font-family: 'ElectronicArtsDisplay';
-        src: url(/assets/fonts/display/ElectronicArtsDisplay-Regular.woff2) format('woff');
-        font-weight: 400;
-        font-style: normal;
-      }
-
-      @font-face {
-        font-family: 'ElectronicArtsDisplay';
-        src: url(/assets/fonts/display/ElectronicArtsDisplay-Bold.woff2) format('woff');
-        font-weight: 600;
-        font-style: normal;
-      }
-
-      @font-face {
-        font-family: 'ElectronicArtsText';
-        src: url(/assets/fonts/text/ElectronicArtsText-Light.woff2) format('woff');
-        font-weight: 300;
-        font-style: normal;
-      }
-
-      @font-face {
-        font-family: 'ElectronicArtsText';
-        src: url(/assets/fonts/text/ElectronicArtsText-LightItalic.woff2) format('woff');
-        font-weight: 300;
-        font-style: italic;
-      }
-
-      @font-face {
-        font-family: 'ElectronicArtsText';
-        src: url(/assets/fonts/text/ElectronicArtsText-Regular.woff2) format('woff');
-        font-weight: 400;
-        font-style: normal;
-      }
-
-      @font-face {
-        font-family: 'ElectronicArtsText';
-        src: url(/assets/fonts/text/ElectronicArtsText-Italic.woff2) format('woff');
-        font-weight: 400;
-        font-style: italic;
-      }
-
-      @font-face {
-        font-family: 'ElectronicArtsText';
-        src: url(/assets/fonts/text/ElectronicArtsText-Bold.woff2) format('woff');
-        font-weight: 600;
-        font-style: normal;
-      }
-
-      @font-face {
-        font-family: 'ElectronicArtsText';
-        src: url(/assets/fonts/text/ElectronicArtsText-BoldItalic.woff2) format('woff');
-        font-weight: 600;
-        font-style: italic;
-      }
-    </style>
    <!-- Website Name / what it looks like at the top-->
    <title>Website.name</title>
     <meta property="og:type" content="article">
@@ -128,135 +61,9 @@
      <!--website info-->
     <meta name="description" content="Website.Description">
     <meta name="author" content="-meisme-">
-    <meta property="article:modified_time" content="2023-04-14T21:49:41Z">
-    <meta property="article:published_time" content="2023-04-14T21:49:41Z">
-    <script type="application/ld+json">
-       {
-        "@context": "http://schema.org",
-        "@type": "Article",
-        "image": {
-          "@type": "ImageObject",
-          "url": "https://media.contentapi.ea.com/content/dam/apex-legends/images/2019/01/apex-featured-image-16x9.jpg.adapt.crop191x100.1200w.jpg"
-        },
-        "author": {
-          "@type": "Organization",
-          "name": "-meisme-",
-          "sameAs": "-meisme- / about "
-        },
-        "publisher": {
-          "@type": "Organization",
-          "name": "Evolve Gaming",
-          "sameAs": "https://google.com",
-          "logo": {
-            "@type": "ImageObject",
-            "url": "logo.url",
-            "width": 60,
-            "height": 60
-          }
-        },
-        "inLanguage": "en",
-        "description": "The Official Evolve Website",
-        "datePublished": "2023-04-14T21:49:41Z",
-        "dateModified": "2023-04-14T21:49:41Z",
-        "headline": "Apex Legends - The Next Evolution of Hero Shooter - Free to Play",
-        "url": "https://www.ea.com/games/apex-legends"
-      }
-    </script>
-    <script>
-      bazadebezolkohpepadr = "592996333"
-    </script>
-    <script type="text/javascript" src="https://www.ea.com/akam/13/23586424" defer></script>
   </head>
 
-    <custom-style>
-     
-      <!-- The ea theme-color changes all of the text Boxes Colors-->
-      <style>
-        html {
-          --origin-brand-color: #DA292A;
-          --eaCorporate-landingSection-spacerTop-XS: 32px;
-          --eaCorporate-landingSection-spacerTop-SM: 32px;
-          --eaCorporate-landingSection-spacerTop-MD: 80px;
-          --eaCorporate-landingSection-spacerTop-LG: 104px;
-          --eaCorporate-landingSection-spacerTop-XL: 128px;
-          --eaCorporate-landingSection-spacerBottom-XS: 32px;
-          --eaCorporate-landingSection-spacerBottom-SM: 32px;
-          --eaCorporate-landingSection-spacerBottom-MD: 40px;
-          --eaCorporate-landingSection-spacerBottom-LG: 48px;
-          --eaCorporate-landingSection-spacerBottom-XL: 56px;
-          --eaCorporate-standardSection-spacerTop-XS: 48px;
-          --eaCorporate-standardSection-spacerTop-SM: 48px;
-          --eaCorporate-standardSection-spacerTop-MD: 80px;
-          --eaCorporate-standardSection-spacerTop-LG: 80px;
-          --eaCorporate-standardSection-spacerTop-XL: 80px;
-          --eaCorporate-standardSection-spacerBottom-XS: 48px;
-          --eaCorporate-standardSection-spacerBottom-SM: 48px;
-          --eaCorporate-standardSection-spacerBottom-MD: 80px;
-          --eaCorporate-standardSection-spacerBottom-LG: 80px;
-          --eaCorporate-standardSection-spacerBottom-XL: 80px;
-          --ea-theme-stream-ui-paddle-default: #161616;
-          --ea-theme-stream-ui-paddle-disabled: #BFBFBF;
-          --ea-theme-stream-ui-progress-indicator-default: rgb(255, 255, 255);
-          --ea-theme-stream-ui-progress-indicator-hover: rgb(255, 255, 255);
-          --ea-theme-stream-ui-progress-bar-stroke-default: #ff8e8e;
-          --ea-theme-stream-ui-progress-bar-stroke-hover: #ff8e8e;
-          --ea-theme-stream-ui-progress-bar-fill-hover: #ff8e8e;
-          --ea-theme-toaster-eyebrow-font-size-mobile: 16px;
-          --ea-theme-toaster-eyebrow-font-size-tablet: 18px;
-          --ea-theme-toaster-eyebrow-font-size-desktop: 20px;
-          --ea-theme-toaster-copy-font-size-tablet: 16px;
-          --ea-theme-toaster-copy-font-size-desktop: 18px;
-          --ea-theme-tabs-background-color: #161616;
-          --ea-theme-tabs-indicator-color: #da292a;
-          --ea-theme-tabs-interface-color: #FF4747;
-          --ea-theme-tabs-unselected-type: #ffffff;
-          --ea-theme-tabs-selected-type: #ffffff;
-          --ea-theme-tabs-selected-state: #000000;
-          --ea-theme-tabs-accent-elements: rgba(0, 0, 0, 0.08);
-          --ea-theme-tabs-inactive-interface-color: rgba(255, 255, 255, 0.1);
-          --ea-theme-tabs-tab-text-transform: capitalize;
-          --ea-theme-h5-font-size-tablet-landscape: 22px;
-          --ea-theme-secondary-font-family: Duke_Fill;
-          --ea-theme-typographic-headings-font-family: Duke_Fill;
-          --ea-theme-primary-font-family: TT Lakes W05 Regular, sans-serif;
-          --ea-theme-color: #DA292A; 
-          --ea-theme-dark-gradient: #B03039;
-          --ea-theme-light-gradient: #DA292A;
-          --ea-theme-d3-line-height-desktop: 62px;
-          --ea-theme-d3-line-height-tablet-landscape: 46px;
-          --ea-theme-d3-line-height-mobile: 46px;
-          --ea-theme-d2-font-weight: normal;
-          --ea-theme-d3-font-weight: normal;
-          --ea-theme-d4-font-weight: normal;
-          --ea-theme-l1-font-weight: normal;
-          --ea-theme-l2-font-weight: normal;
-          --ea-theme-local-nav-shelf-header-font-size-desktop: 24px;
-          --ea-theme-local-nav-shelf-header-font-size-tablet-landscape: 18px;
-          --ea-theme-local-nav-shelf-header-font-size-mobile: 20px;
-          --ea-theme-d2-font-size-desktop: 82px;
-          --ea-theme-d2-font-size-tablet-landscape: 68px;
-          --ea-theme-d2-font-size-tablet-portrait: 54px;
-          --ea-theme-d2-font-size-mobile: 48px;
-          --ea-theme-d3-font-size-desktop: 64px;
-          --ea-theme-d3-font-size-tablet-landscape: 54px;
-          --ea-theme-d3-font-size-tablet-portrait: 44px;
-          --ea-theme-d3-font-size-mobile: 40px;
-          --ea-theme-d4-font-size-desktop: 48px;
-          --ea-theme-d4-font-size-tablet-landscape: 44px;
-          --ea-theme-d4-font-size-tablet-portrait: 40px;
-          --ea-theme-d4-font-size-mobile: 36px;
-          --ea-theme-l2-font-size-desktop: 22px;
-          --ea-theme-l2-font-size-mobile: 20px;
-          --ea-theme-l2-font-size-tablet-landscape: 20px;
-          --ea-text-case: uppercase;
-          --ea-theme-spacer-height-xsmall: 93px;
-          --ea-theme-spacer-height-mobile-small: 93px;
-          --ea-theme-spacer-height-tablet-portrait: 96px;
-          --ea-theme-spacer-height-tablet-landscape: 96px;
-          --ea-theme-spacer-height-desktop: 100px;
-        }
-      </style>
-    </custom-style>
+
           <!--end theme colors/text-->
     <ea-elements-loader elements="ea-network-nav, ea-player, ea-type-kit"></ea-elements-loader>
     <ea-network-nav unresolved userData="/user-data" content="//nds-network-nav.ea.com//en-us/network-nav" login-url="/login" logout-url="/logout" hide-logo></ea-network-nav>
@@ -499,7 +306,7 @@
     <ea-modal modal unresolved id="pc-download" theme="dark" type="full-bleed">
       <ea-elements-loader elements="ea-section"></ea-elements-loader>
       <ea-section unresolved slot="section" type="railed" layout="100" background-color="light" background-overflow="hidden" spacing-top="none" spacing-bottom="none" background-image-smallest="https://media.contentapi.ea.com/content/dam/apex-legends/common/apex-section-bg-tan-texture-longer-xl.jpg.adapt.320w.jpg" background-image-small="https://media.contentapi.ea.com/content/dam/apex-legends/common/apex-section-bg-tan-texture-longer-xl.jpg.adapt.768w.jpg" background-image-medium="https://media.contentapi.ea.com/content/dam/apex-legends/common/apex-section-bg-tan-texture-longer-xl.jpg.adapt.1024w.jpg" background-image-large="https://media.contentapi.ea.com/content/dam/apex-legends/common/apex-section-bg-tan-texture-longer-xl.jpg.adapt.1456w.jpg" background-image-largest="https://media.contentapi.ea.com/content/dam/apex-legends/common/apex-section-bg-tan-texture-longer-xl.jpg.adapt.1920w.jpg" image-tooltip="">
-        <img src="https://media.contentapi.ea.com/content/dam/apex-legends/common/apex-section-bg-tan-texture-longer-xl.jpg.adapt.320w.jpg" alt="" srcset="https://media.contentapi.ea.com/content/dam/apex-legends/common/apex-section-bg-tan-texture-longer-xl.jpg.adapt.320w.jpg 320w, https://media.contentapi.ea.com/content/dam/apex-legends/common/apex-section-bg-tan-texture-longer-xl.jpg.adapt.768w.jpg 768w, https://media.contentapi.ea.com/content/dam/apex-legends/common/apex-section-bg-tan-texture-longer-xl.jpg.adapt.1024w.jpg 1024w, https://media.contentapi.ea.com/content/dam/apex-legends/common/apex-section-bg-tan-texture-longer-xl.jpg.adapt.1456w.jpg 1320w, https://media.contentapi.ea.com/content/dam/apex-legends/common/apex-section-bg-tan-texture-longer-xl.jpg.adapt.1920w.jpg 1456w" />
+        <img src="https://media.contentapi.ea.com/content/dam/apex-legends/common/apex-section-bg-tan-texture-longer-xl.jpg.adapt.320w.jpg" alt="" srcset="https://media.contentapi.ea.com/content/dam/apex-legends/common/apex-section-bg-tan-texture-longer-xl.jpg.adapt.320w.jpg 320w, https://media.contentapi.ea.com/content/dam/apex-legends/common/apex-section-bg-tan-texture-longer-xl.jpg.adapt.768w.jpg 768w, https://media.contentapi.ea.com/content/dam/apex-legends/common/apex-section-bg-tan-texture-longer-xl.jpg.adapt.1024w.jpg 1024w, https://media.contentapi.ea.com/content/dam/apex-legends/common/apex-section-bg-tan-texture-longer-xl.jpg.adapt.1456w.jpg 1320w, https://media.contentapi.ea.com/content/dam/apex-legends/common/apex-section-bg-tan-texture-longer-xl.jpg.adapt.1920w.jpg 1456w" sizes="+16px" />
         <ea-section-column slot="section-column" indent-left="1" indent-right="1" text-align="center" mobile-order="0">
           <ea-elements-loader elements="ea-spacer"></ea-elements-loader>
           <ea-spacer unresolved smallest="3rem" small="3rem" medium="3rem" large="3rem" largest="3rem"></ea-spacer>
@@ -579,23 +386,25 @@
       <ea-hero layout="medium" text-position="left" text-align="center" text-color="light" stacked background-color="none" title-text="Unfinished Text" copy-text="oops!" image-smallest="put the stored image here i sent it to alex " image-tooltip="" spacing-bottom="none" spacing-top="none" scrim-color="none" scrim-opacity="medium" unresolved custom-styles="{}">
         <h1>Take Your Shot in Apex Legends: Arsenal</h1>
         <p>It&#x27;s time to show your caliber. New Legend Ballistic is here to teach the Legends some manners on an updated World&#x27;s Edge. Hit the newly evolved Firing Range and get ready: in the heat of the Games, you might only get one shot.</p>
-        <img src="https://media.contentapi.ea.com/content/dam/apex-legends/images/2023/05/apex-hero-md-s17-home-page-7x2-xl.jpg.adapt.crop16x9.320w.jpg" alt="" srcset="https://media.contentapi.ea.com/content/dam/apex-legends/images/2023/05/apex-hero-md-s17-home-page-7x2-xl.jpg.adapt.crop16x9.320w.jpg 320w, https://media.contentapi.ea.com/content/dam/apex-legends/images/2023/05/apex-hero-md-s17-home-page-7x2-xl.jpg.adapt.crop16x9.767w.jpg 768w, https://media.contentapi.ea.com/content/dam/apex-legends/images/2023/05/apex-hero-md-s17-home-page-7x2-xl.jpg.adapt.crop2x1.1023w.jpg 1024w, https://media.contentapi.ea.com/content/dam/apex-legends/images/2023/05/apex-hero-md-s17-home-page-7x2-xl.jpg.adapt.crop5x2.1455w.jpg 1320w, https://media.contentapi.ea.com/content/dam/apex-legends/images/2023/05/apex-hero-md-s17-home-page-7x2-xl.jpg.adapt.crop7x2.1920w.jpg 1456w" />
+        <img src="https://media.contentapi.ea.com/content/dam/apex-legends/images/2023/05/apex-hero-md-s17-home-page-7x2-xl.jpg.adapt.crop16x9.320w.jpg" alt="" srcset="https://media.contentapi.ea.com/content/dam/apex-legends/images/2023/05/apex-hero-md-s17-home-page-7x2-xl.jpg.adapt.crop16x9.320w.jpg 320w, https://media.contentapi.ea.com/content/dam/apex-legends/images/2023/05/apex-hero-md-s17-home-page-7x2-xl.jpg.adapt.crop16x9.767w.jpg 768w, https://media.contentapi.ea.com/content/dam/apex-legends/images/2023/05/apex-hero-md-s17-home-page-7x2-xl.jpg.adapt.crop2x1.1023w.jpg 1024w, https://media.contentapi.ea.com/content/dam/apex-legends/images/2023/05/apex-hero-md-s17-home-page-7x2-xl.jpg.adapt.crop5x2.1455w.jpg 1320w, https://media.contentapi.ea.com/content/dam/apex-legends/images/2023/05/apex-hero-md-s17-home-page-7x2-xl.jpg.adapt.crop7x2.1920w.jpg 1456w" sizes="+16px" />
         <ea-elements-loader elements="ea-cta"></ea-elements-loader>
         <ea-cta slot="cta" type="standard" link-url="/games/apex-legends/arsenal" link-text="Learn More" icon="none" fill-color="brand" text-color="light" stroke-color="none" target="_self" intent="navigation" emphasis="primary" unresolved>
           <a href="/games/apex-legends/arsenal"> Learn More </a>
         </ea-cta>
       </ea-hero>
      <!-- Video Behind Start Page code end -->
-
+ 
+     <!--immage Behind News Page Code Start-->
       <ea-elements-loader elements="ea-section"></ea-elements-loader>
       <ea-section unresolved slot="section" type="railed" layout="100" background-color="none" background-overflow="visible" spacing-top="none" spacing-bottom="none" mp4-src="" webm-src="" background-image-smallest="https://media.contentapi.ea.com/content/dam/apex-legends/common/apex-section-bg-homepage-news-xl.jpg.adapt.320w.jpg" background-image-small="https://media.contentapi.ea.com/content/dam/apex-legends/common/apex-section-bg-homepage-news-xl.jpg.adapt.768w.jpg" background-image-medium="https://media.contentapi.ea.com/content/dam/apex-legends/common/apex-section-bg-homepage-news-xl.jpg.adapt.1024w.jpg" background-image-large="https://media.contentapi.ea.com/content/dam/apex-legends/common/apex-section-bg-homepage-news-xl.jpg.adapt.1456w.jpg" background-image-largest="https://media.contentapi.ea.com/content/dam/apex-legends/common/apex-section-bg-homepage-news-xl.jpg.adapt.1920w.jpg" image-tooltip="">
-        <img src="https://media.contentapi.ea.com/content/dam/apex-legends/common/apex-section-bg-homepage-news-xl.jpg.adapt.320w.jpg" alt="" srcset="https://media.contentapi.ea.com/content/dam/apex-legends/common/apex-section-bg-homepage-news-xl.jpg.adapt.320w.jpg 320w, https://media.contentapi.ea.com/content/dam/apex-legends/common/apex-section-bg-homepage-news-xl.jpg.adapt.768w.jpg 768w, https://media.contentapi.ea.com/content/dam/apex-legends/common/apex-section-bg-homepage-news-xl.jpg.adapt.1024w.jpg 1024w, https://media.contentapi.ea.com/content/dam/apex-legends/common/apex-section-bg-homepage-news-xl.jpg.adapt.1456w.jpg 1320w, https://media.contentapi.ea.com/content/dam/apex-legends/common/apex-section-bg-homepage-news-xl.jpg.adapt.1920w.jpg 1456w" />
+        <img src="https://media.contentapi.ea.com/content/dam/apex-legends/common/apex-section-bg-homepage-news-xl.jpg.adapt.320w.jpg" alt="" srcset="https://media.contentapi.ea.com/content/dam/apex-legends/common/apex-section-bg-homepage-news-xl.jpg.adapt.320w.jpg 320w, https://media.contentapi.ea.com/content/dam/apex-legends/common/apex-section-bg-homepage-news-xl.jpg.adapt.768w.jpg 768w, https://media.contentapi.ea.com/content/dam/apex-legends/common/apex-section-bg-homepage-news-xl.jpg.adapt.1024w.jpg 1024w, https://media.contentapi.ea.com/content/dam/apex-legends/common/apex-section-bg-homepage-news-xl.jpg.adapt.1456w.jpg 1320w, https://media.contentapi.ea.com/content/dam/apex-legends/common/apex-section-bg-homepage-news-xl.jpg.adapt.1920w.jpg 1456w" sizes="+16px" />
         <ea-section-column slot="section-column" indent-left="" indent-right="" text-align="left" mobile-order="0">
           <ea-elements-loader elements="ea-subheading"></ea-elements-loader>
           <ea-subheading unresolved type="ordered" layout="small" title-text="&nbsp;" spacing-top="none" spacing-bottom="none">
             <h3>&amp;nbsp</h3>
           </ea-subheading>
-
+ <!--immage Behind News Page Code End-->
+ 
          <!-- News Start -->
           <ea-elements-loader elements="ea-subheading"></ea-elements-loader>
           <ea-subheading unresolved type="ordered" layout="small" text-align="center" text-color="dark" title-text="Latest News" spacing-top="small" spacing-bottom="small">
@@ -623,8 +432,8 @@
 <!--News End -->
 <!-- Beyond Gaming Start-->
       <ea-elements-loader elements="ea-section"></ea-elements-loader>
-      <ea-section unresolved slot="section" type="railed" layout="100" background-color="custom" custom-background-value="#000000" background-overflow="hidden" spacing-top="none" spacing-bottom="none" background-image-smallest="Replace with 4th link" image-tooltip="">
-        <img src="Replace with 4th link" alt="4th link"/>
+      <ea-section unresolved slot="section" type="railed" layout="100" background-color="custom" custom-background-value="#000000" background-overflow="hidden" spacing-top="none" spacing-bottom="none" background-image-smallest="Replace-with-4th link" image-tooltip="">
+        <img src="Replace-with-4th-link" alt="4th link"/>
         <ea-section-column slot="section-column" text-align="center" mobile-order="0">
           <ea-elements-loader elements="ea-text"></ea-elements-loader>
           <ea-text unresolved slot="text" text-color="light">
@@ -647,7 +456,7 @@
             <ea-elements-loader elements="ea-tile"></ea-elements-loader>
             <ea-container slot="container" filter-key="All">
               <ea-tile unresolved slot="tile" style="--ea-animation-index:1" media="https://media.contentapi.ea.com/content/dam/apex-legends/images/2018/12/apex-grid-tile-sci-fi-wild-west.png.adapt.crop16x9.652w.png" title-text="&lt;b&gt;What are we working on?&lt;/b&gt;" tooltip="">
-                <h3>&lt;b&gt;The Ultimate Squad&lt;/b&gt;</h3>
+                <h3>&lt;b&gt;What Are We Working On&lt;/b&gt;</h3>
                 <ea-tile-copy slot="copy">
                   <p>Currently nothing is being worked on!</p>
                 </ea-tile-copy>
@@ -656,7 +465,7 @@
             <ea-elements-loader elements="ea-tile"></ea-elements-loader>
             <ea-container slot="container" filter-key="All">
               <ea-tile unresolved slot="tile" style="--ea-animation-index:2" media="https://media.contentapi.ea.com/content/dam/apex-legends/images/2018/12/apex-grid-tile-lawless-world.png.adapt.crop16x9.652w.png" title-text="&lt;b&gt;Who are we?&lt;/b&gt;" tooltip="">
-                <h3>&lt;b&gt;Strategic Combat&lt;/b&gt;</h3>
+                <h3>&lt;b&gt;Who Are We&lt;/b&gt;</h3>
                 <ea-tile-copy slot="copy">
                   <p>We are a small game dev company with a small following</p>
                 </ea-tile-copy>
@@ -666,26 +475,6 @@
         </ea-section-column>
       </ea-section>
 <!-- Beyond Gaming End-->
-          <ea-elements-loader elements="ea-spacer"></ea-elements-loader>
-          <ea-spacer unresolved smallest="3vw" small="3vw" medium="3vw" large="3vw" largest="3vw"></ea-spacer>
-      <ea-elements-loader elements="ea-modal"></ea-elements-loader>
-      <ea-modal modal unresolved id="1" theme="dark" type="railed">
-        <ea-elements-loader elements="ea-youtube"></ea-elements-loader>
-        <ea-youtube unresolved slot="youtube" video-id="dQw4w9WgXcQ" playlist="" default-age-gate="" theme="light" icon-theme="light" autoplay="0" controls="1" rel="0" annotations="3" hide-info="0" age-gate-alignment="center-left" age-gate-message="This video is age-restricted and only available on Youtube." more-link-text="Learn More" more-link-url="https://support.google.com/youtube/answer/2802167?hl=en" watch-link-text="Watch on Youtube" cover-image-smallest="https://media.contentapi.ea.com/content/dam/apex-legends/videos/2023/04/23bbe5e7-20b7-8d96-6661-be9b8244a9f2.youtube/subassets/poster.jpg.adapt.crop16x9.320w.jpg" cover-image-small="https://media.contentapi.ea.com/content/dam/apex-legends/videos/2023/04/23bbe5e7-20b7-8d96-6661-be9b8244a9f2.youtube/subassets/poster.jpg.adapt.crop16x9.767w.jpg" cover-image-medium="https://media.contentapi.ea.com/content/dam/apex-legends/videos/2023/04/23bbe5e7-20b7-8d96-6661-be9b8244a9f2.youtube/subassets/poster.jpg.adapt.crop16x9.1023w.jpg" cover-image-large="https://media.contentapi.ea.com/content/dam/apex-legends/videos/2023/04/23bbe5e7-20b7-8d96-6661-be9b8244a9f2.youtube/subassets/poster.jpg.adapt.crop16x9.1455w.jpg" cover-image-largest="https://media.contentapi.ea.com/content/dam/apex-legends/videos/2023/04/23bbe5e7-20b7-8d96-6661-be9b8244a9f2.youtube/subassets/poster.jpg.adapt.crop16x9.1920w.jpg" cover-image-tooltip="" button-color="dark">
-          <div itemscope itemtype="http://schema.org/VideoObject">
-            <link itemprop="url" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
-            <link itemprop="thumbnailUrl" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf0oVlytucM3OATSsdmDXlLMDPpHZOoriq5Q&usqp=CAU.jpg.adapt.crop16x9.1920w.jpg">
-            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ"></iframe>
-          </div>
-        </ea-youtube>
-      </ea-modal>
-      <ea-elements-loader elements="ea-ftue-ga-event-initiator"></ea-elements-loader>
-      <ea-ftue-ga-event-initiator></ea-ftue-ga-event-initiator>
-      <div style="display: none;"></div>
     </main>
-    <ea-type-kit kit-url="//use.typekit.net/txn1klh.js"></ea-type-kit>
-    <noscript>
-      <img src="https://www.ea.com/akam/13/pixel_23586424?a=dD01NTk1YTNkYjNmYTg1NGZiNTkyNzFhNmQ4OGJlODQ4NjBkOGYyMTViJmpzPW9mZg==" alt="pixel img" style="visibility: hidden; position: absolute; left: -999px; top: -999px;" />
-    </noscript>
   </body>
 </html>
